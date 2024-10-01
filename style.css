@@ -19,8 +19,8 @@
 }
 
 body, html{
-    background-color: #86b48d;
-    width: 100vw;
+    background-image: linear-gradient(to top, #b1dfb8, #d7d481);
+        width: 100vw;
     height: 100vh;
 }
 
@@ -44,6 +44,13 @@ main{
     transition: width 0.3s, heigth 0.3s ;
 }
 
+.campo{
+    width: 100%;
+    height: 40px;
+    display: block;
+    padding-left: 9px;
+}
+
 #image{
     display: block;
     background: #86b48d url(img/pexels-markusspiske-1089440\ \(1\).jpg) no-repeat; 
@@ -63,4 +70,67 @@ main{
 
 #formulario > p{
     font-size: 0.8em;
+}
+
+form > input[type="submit"]{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 30px;
+    background-color: #addeb5;
+    border-radius: 5px;
+    border: #86b48d;
+    cursor: pointer;
+}
+
+form > input[type="submit"]:hover{
+    background-color: #799d7f;
+    color: white;
+}
+
+.bt{
+    text-align: center;
+    display: block;
+    font-size: 1em;
+    padding-top: 5px;
+    color: #5d7661;
+}
+.bt:hover{
+    color: #78f78d;
+}
+
+@media screen and (min-width: 750px) {
+    body{
+        background-image: linear-gradient(to top, #b1dfb8, #d7d481);
+    }
+
+    #login{
+    width: 80vw;
+    height: 70vh;
+    }
+
+    #image{
+        float: left;
+        width: 35%;
+        height: 100%;
+    }
+
+    #formulario{
+        float: right;
+        width: 65%;
+    }
+
+    #formulario > h1{
+        font-size: 2.0em;
+    }
+
+    #formulario > p{
+        font-size: 1.8em;
+    }
+    .campo{
+        width: 100%;
+        height: 40px;
+        padding-left: 9px;
+    }
+    
 }
